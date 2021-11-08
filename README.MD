@@ -197,3 +197,133 @@ const element = (
 ```
 ### Salida Ejercicio 4
 ![Image text](img/ejercicio4.png)
+
+# EJERCIO 5 
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar los datos de los 'enlaces favoritos' del ejercicio 
+```javascript
+const data = {
+    titulo: "Página incial de Juan Tuesta",
+    parrafo1: "Bienvenidos a mi página persoanl. Soy un alumno de la Universidad de Deusto y esta es mi página inicial, con la lista de mis enlaces favoritos y otra información de interés",
+    titulo2: "Enlaces favoritos:",
+    favorito1: "Páginas personales",
+    favorito2: "Páginas de referencia",
+    favorito3: "Portales",
+    favorito4: "Publicaciones",
+    parrafo2: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+}
+```
+### Creación de la variable 'dataPersonales' para guardar los datos de  'Personales' del ejercicio 
+```javascript
+const dataPersonales = {
+    titulo1: "Documentalistas",
+    subtitulo1: "Charkes F. Golfarb",
+    subtitulo2: "Lou Burnard",
+    subtitulo3: "Tim Berners-Lee",
+    titulo2: "Historiadores",
+    titulo3: "Lingüistas",
+    titulo4: "Traductores",
+}
+```
+### Creación de la variable 'dataReferencia' para guardar los datos de 'Referencia' del ejercicio 
+```javascript
+const dataReferencia = {
+    titulo1: "Bibliotecas universitarias",
+    titulo2: "Centros de documentación",
+    titulo3: "Museos de arte contemporáneo",
+    titulo4: "Medios de comunicación",
+}
+```
+### Creación de la variable 'dataPortales' para guardar los datos de 'Portales' del ejercicio 
+```javascript
+const dataPortales = {
+    titulo1: "Inicia",
+    titulo2: "Telépolis",
+    titulo3: "Ciudades",
+    titulo4: "Terra",
+}
+```
+### Creación de la variable 'dataPublicaciones' para guardar los datos de 'Publicaciones' del ejercicio 
+```javascript
+const dataPublicaciones = {
+    titulo1: "Ciberp@ís",
+    titulo2: "Diario Tecnologías de la Información",
+    titulo3: "The Standard",
+    titulo4: "Infoworld",
+    titulo5: "Wired",
+}
+```
+### Creación de la variable 'element' para pintar los datos con la estructura JSX y HTML
+```javascript
+const element = (
+    //Este div se encarga de mostrar la información de "Enlaces"
+    <div id="inicio">
+        <h1>{data.titulo}</h1>
+        <p>{data.parrafo1}</p>
+        <h2>{data.titulo2}</h2>
+        <ol>
+            <a href = ""><li>{data.favorito1}</li></a>
+            <li>{data.favorito2}</li>
+            <li>{data.favorito3}</li>
+            <li>{data.favorito4}</li>
+        </ol>
+        <hr/>
+        <h2>{data.favorito1}</h2>
+        <div id="personales">
+            <ol>
+                <li>{dataPersonales.titulo1}
+                    <ul>
+                        <li>{dataPersonales.subtitulo1}</li>
+                        <li>{dataPersonales.subtitulo2}</li>
+                        <li>{dataPersonales.subtitulo3}</li>
+                    </ul>
+                </li>
+                <li>{dataPersonales.titulo2}</li>
+                <li>{dataPersonales.titulo3}</li>
+                <li>{dataPersonales.titulo4}</li>
+            </ol>
+            <hr/>
+        </div>
+        <div id= "referencia">
+            <h2>{data.favorito2}</h2>
+            <ol>
+                <li>{dataReferencia.titulo1}</li>
+                <li>{dataReferencia.titulo2}</li>
+                <li>{dataReferencia.titulo3}</li>
+                <li>{dataReferencia.titulo4}</li>
+            </ol>
+            <hr/>
+        </div>
+        <div>
+            <h2>{data.favorito3}</h2>
+            <ol>
+                <li>{dataPortales.titulo1}</li>
+                <li>{dataPortales.titulo2}</li>
+                <li>{dataPortales.titulo3}</li>
+                <li>{dataPortales.titulo4}</li>
+            </ol>
+        </div>
+        <hr/>
+        <div>
+            <h2>{data.favorito4}</h2>
+            <ol>
+                <li>{dataPublicaciones.titulo1}</li>
+                <li>{dataPublicaciones.titulo2}</li>
+                <li>{dataPublicaciones.titulo3}</li>
+                <li>{dataPublicaciones.titulo4}</li>
+                <li>{dataPublicaciones.titulo5}</li>
+            </ol>
+            <hr/>
+        </div>
+        <p><i>{data.parrafo2}</i></p>
+    </div>    
+);
+```
+### Salida Ejercicio 5
+![Image text](img/ejercicio5-1.png)
+![Image text](img/ejercicio5-2.png)

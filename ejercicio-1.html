@@ -6,22 +6,14 @@
   </head>
   <body>
     <div id="root">
-      <!--Render code React-js-->
     </div>
 
-    <!-- Cargar React. -->
-    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <!-- Cargamos nuestro componente de React. -->
+    
     <script type="text/babel">
-// nota cada codigo que veas documentado de aca para abajo
-// seran diferentes formas de realizarlo con jsx los coloco para
-// que podamos probar y mirar diferentes formas de como podriamos realizarlos
-// los 12 ejercicios
 
-// 0. guardado de datos simple
 const data = {
   titulo: "Plato de la semana",
   subtitle1:  "Berenjenas fritas",
@@ -41,7 +33,7 @@ const data = {
   preparacion5:  "Enharizarlas, ponerlas a freir durante 5 minutos en aceite bien caliente.",
 }
 
-// 1.
+
 const element = (
   <div>
     <h1>{data.titulo}</h1>
@@ -69,10 +61,9 @@ const element = (
 );
 
 
-// Renderiamos o pintamos
 ReactDOM.render(
-  element,// estructura jsx para pintar
-  document.getElementById('root')// elemento donde se pintara
+  element,
+  document.getElementById('root')
 );
     </script>
   </body>
