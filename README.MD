@@ -108,3 +108,44 @@ const element = (
 ```
 ### Salida Ejercicio 2
 ![Image text](img/ejercicio2.png)
+
+# EJERCICIO 3
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar los datos del ejercicio 
+```javascript
+const data = {
+    titulo: "Página incial de Juan Tuesta",
+    parrafo1: "Bienvenidos a mi página persoanl. Soy un alumno de la Universidad de Deusto y esta es mi página inicial, con la lista de mis enlaces favoritos y otra información de interés",
+    titulo2: "Enlaces favoritos:",
+    lista1: "Internet",
+    lista2: "Google",
+    lista3: "Aldea global",
+    lista4: "Manual de HTML",
+    parrafo2: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+}
+```
+### Creación de la variable 'element' para dar formato JSX y HTML
+```javascript
+const element = (
+    <div>
+        <h1>{data.titulo}</h1>
+        <p>{data.parrafo1}</p>
+        <h2>{data.titulo2}</h2>
+        <ol>
+            <li>{data.lista1}</li>
+            <a href=""><li>{data.lista2}</li></a>
+            <li>{data.lista3}</li>
+            <a href=""><li>{data.lista4}</li></a>
+        </ol>
+        <p><i>{data.parrafo2}</i></p>
+    </div>
+);
+```
+### Salida Ejercicio 2
+![Image text](img/ejercicio3.png)
+
