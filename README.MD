@@ -146,6 +146,54 @@ const element = (
     </div>
 );
 ```
-### Salida Ejercicio 2
+### Salida Ejercicio 3
 ![Image text](img/ejercicio3.png)
 
+# EJERCICIO 4
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar los datos del ejercicio 
+```javascript
+const data = {
+    titulo: "Página incial de Juan Tuesta",
+    parrafo1: "Bienvenidos a mi página persoanl. Soy un alumno de la Universidad de Deusto y esta es mi página inicial, con la lista de mis enlaces favoritos y otra información de interés",
+    titulo2: "Enlaces favoritos:",
+    favorito1: "Páginas personales",
+    listafav1: "Charkes F. Golfarb",
+    listafav2: "Lou Burnard",
+    listafav3: "Tim Berners-Lee",
+    favorito2: "Páginas de referencia",
+    favorito3: "Portales",
+    favorito4: "Medios de comunicación",
+    parrafo2: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+}
+```
+### Creación de la variable 'element' para dar formato JSX y HTML
+```javascript
+const element = (
+    <div>
+        <h1>{data.titulo}</h1>
+        <p>{data.parrafo1}</p>
+        <h2>{data.titulo2}</h2>
+        <ol>
+            <li>{data.favorito1}
+                <ul>
+                    <li>{data.listafav1}</li>
+                    <li>{data.listafav2}</li>
+                    <li>{data.listafav3}</li>
+                </ul>
+            </li>
+            <li>{data.favorito2}</li>
+            <li>{data.favorito3}</li>
+            <li>{data.favorito4}</li>
+        </ol>
+        <p><i>{data.parrafo2}</i></p>
+    </div>
+);
+```
+### Salida Ejercicio 4
+![Image text](img/ejercicio4.png)
