@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EJERCICIO 8</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+
+    
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+    imagen: <h1><img src ="img/imagen2.png" width = "200px"></img>Tu Concierto</h1>,
+    parrafo1: "Bienvenidos a este blog de conciertos...",
+    imagen2: <img src = "img/imagen1.png" width = "900px"></img>,
+};
+
+
+const element = (
+    <div>
+        {data.imagen}
+        <p>{data.parrafo1}</p>
+        {data.imagen2}
+
+    </div>
+);
+
+
+    ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+    </script>
+</body>
+</html>

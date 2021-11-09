@@ -1,4 +1,4 @@
-# TRABAJO REACT.JS 
+# TRABAJO JSX 
 ## EJERCICIO # 1
 ## Código JavaScript
 
@@ -327,7 +327,7 @@ const element = (
 ### Salida Ejercicio 5
 
 ![Image text](img/ejercicio5-1.png)
-![Image text]
+
 
 # EJERCICIO 6
 ### Importo las librerías de React
@@ -398,3 +398,110 @@ ReactDOM.render(
     document.getElementById('root')
     );
 ```
+
+### Salida Ejercicio 6
+![Img text](img/ejercicio6-1.png)
+![Img text](img/ejercicio6-2.png)
+
+# EJERCICIO 7
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar los datos del,  ejercicio 
+```javascript
+const data = {
+    titulo: "Destinos Turísiticos",
+    subtitulo1: "América",
+    lista1: "Argentina",
+    sublista1_1: "Buenos Aires",
+    sublista1_2: "Bariloche",
+    lista2:"Brasil",
+    sublista2_1: "Rio de Janeiro",
+    sublista2_2: "Brasilia",
+    lista3: "Chile",
+    sublista3_1: "Santiago",
+    sublista3_2: "Valparaiso",
+    lista4: "Colombia",
+    sublista4_1: "Bogotá",
+    sublista4_2: "Catagena de Indias",
+    lista5: "Estados Unidos",
+    sublista5_1: "New York",
+    sublista5_2: "San Francisco",
+    lista6: "México",
+    sublista6_1: "Cancún",
+    sublista6_2: "Acapulco",
+    lista7: "Perú",
+    sublista7_1: "Lima",
+    sublista7_2: "Cuzco",
+    lista8: "Venezuela",
+    sublista8_1: "Magarita",
+    sublista8_2: "Mérida",
+}
+```
+### Creación de la variable 'element' para pintar los datos con la estructura JSX y HTML
+```javascript
+const element = (
+    <div>
+        <h1><b>{data.titulo}</b></h1>
+        <h2><b>{data.subtitulo1}</b></h2>
+        <ol>
+            <b><li><h3>{data.lista1}</h3></li></b>
+            <ol>
+                <li><i>{data.sublista1_1}</i></li>
+                <li><i>{data.sublista1_2}</i></li>
+            </ol>
+            <b><li><h3>{data.lista2}</h3></li></b>
+            <ol>
+                <li><i>{data.sublista2_1}</i></li>
+                <li><i>{data.sublista2_2}</i></li>
+            </ol>
+            <b><li><h3>{data.lista3}</h3></li></b>
+            <ol>
+                <li><i>{data.sublista3_1}</i></li>
+                <li><i>{data.sublista3_2}</i></li>
+            </ol>
+            <b><li><h3>{data.lista4}</h3></li></b>
+            <ol>
+                <li><i>{data.sublista4_1}</i></li>
+                <li><i>{data.sublista4_2}</i></li>
+            </ol>
+            <b><li><h3>{data.lista5}</h3></li></b>
+            <ol>
+                <li><i>{data.sublista5_1}</i></li>
+                <li><i>{data.sublista5_2}</i></li>
+            </ol>
+            <b><li><h3>{data.lista6}</h3></li></b>
+            <ol>
+                <li><i>{data.sublista6_1}</i></li>
+                <li><i>{data.sublista6_2}</i></li>
+            </ol>
+            <b><li><h3>{data.lista7}</h3></li></b>
+            <ol>
+                <li><i>{data.sublista7_1}</i></li>
+                <li><i>{data.sublista7_2}</i></li>
+            </ol>
+            <b><li><h3>{data.lista8}</h3></li></b>
+            <ol>
+                <li><i>{data.sublista8_1}</i></li>
+                <li><i>{data.sublista8_2}</i></li>
+            </ol>
+        </ol>
+        
+
+    </div>
+);
+```
+### Pinto los datos en la pantalla con ReactDOM.render();
+
+```javascript
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+```
+### Salida Ejercicio 7
+![Img text](img/ejercicio7-1.png)
+![Img text](img/ejercicio7-2.png)
