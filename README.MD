@@ -731,8 +731,108 @@ ReactDOM.render(
     document.getElementById('root')
     );
 ```
-### Salida Ejercicio 8
+### Salida Ejercicio 10
 ![Img text](img/ejercicio10-1.png)
 ![Img text](img/ejercicio10-2.png)
 
+### Ejercicio 11
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar  los datos del ejercicio
+```javascript
+const data = {
+    titulo: "Resgistro en nuestra tienda",
+    texto1: "Nombre de usuario",
+    texto2: "Email:",
+    texto3: "Edad",
+    texto4: "Género",
+    texto5: "Recomendado por:",
+    texto6: "Comentarios",
+    texto7: "Acepto terminos y condiciones:"
+};
+```
+### Creación de la variable 'element' para pintar los datos con la estructura JSX y HTML
+```javascript
+const element = (
+    <div>
+        <h1>{data.titulo}</h1>
+        <p>{data.texto1}<br/>
+            <input type="text" size= "30" maxlength="30" placeholder= "Ej: luis" />
+        </p>
+        <p>{data.texto2}<br/>
+            <input type="text" size= "30" maxlength="30" placeholder= "Ej: luis@gmail.com" />
+        </p>
+        <p>{data.texto3}<br/>
+            <input type="text" size= "30" maxlength="30" placeholder= "Ej: 21" />
+        </p>
+        <p>{data.texto4}<br/>
+            <input type="radio"/><label>Masculino</label><br/>
+            <input type="radio"/><label>Femenino</label>
+        </p>
+        <p>{data.texto5}<br/>
+            <select>
+                <option>Google</option>
+                <option>Google</option>
+            </select>
+        </p>
+        <p>{data.texto6}<br/>
+            <textarea rows="5" cols="40"/>
+        </p>
+        <p>{data.texto7}<br/>
+            <input type="checkbox"/>
+        </p>
+        <input type="submit" value= "Resgistrar"/>
+    </div>
+);
+```
+### Pinto los datos en la pantalla con ReactDOM.render();
+```javascript
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+```
+### Salida Ejercicio 11
+![Img text](img/ejercicio11.png)
 
+
+### Ejercicio 12
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar  los datos del ejercicio
+```javascript
+const data = {
+    titulo: "Título en encabezado",
+    parrafo1: "Descripción del audio",
+    audio: <audio src="audio/audio_prueba.mp3" controls/>,
+    parrafo2: "Derechos Reservados (Pie)",
+};
+```
+### Creación de la variable 'element' para pintar los datos con la estructura JSX y HTML
+```javascript
+const element = (
+    <div>
+        <h1>{data.titulo}</h1>
+        <p>{data.parrafo1}</p>
+        {data.audio}
+        <p>{data.parrafo2}</p>
+    </div>
+);
+```
+### Pinto los datos en la pantalla con ReactDOM.render();
+```javascript
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+```
+### Salida del ejercicio 12
+![Img text](img/ejercicio12.png)
