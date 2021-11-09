@@ -836,3 +836,40 @@ ReactDOM.render(
 ```
 ### Salida del ejercicio 12
 ![Img text](img/ejercicio12.png)
+
+### Ejercicio 13
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar  los datos del ejercicio
+```javascript
+const data = {
+    titulo: "Título en encabezado",
+    parrafo1: "Este es un párrafo",
+    audio: <video src="audio/video.mp4" controls/>,
+    parrafo2: "Derechos Reservados (Pie)",
+};
+```
+### Creación de la variable 'element' para pintar los datos con la estructura JSX y HTML
+```javascript
+const element = (
+    <div>
+        <h1>{data.titulo}</h1>
+        <p>{data.parrafo1}</p>
+        {data.audio}
+        <p>{data.parrafo2}</p>
+    </div>
+);
+```
+### Pinto los datos en la pantalla con ReactDOM.render();
+```javascript
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+```
+### Salida del ejercicio 13
+![Img text](img/ejercicio13.png)
