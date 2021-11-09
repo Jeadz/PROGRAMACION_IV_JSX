@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EJERCICIO 10</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+    imagen: <h1><img src ="img/imagen3.png" width = "100px"></img>Recetas.com</h1>,
+    parrafo1: <p><a href="">Rrecetas Principales</a> | <a href="">Postres Latinos</a></p>,
+    parrafo2: "Bienvenido a nuestro sitio web sobre gastronomía Latina, te invitamos a preparar nuestras recetas",
+    subtitulo1: "Nuevas Recetas",
+    subtitulo3: "**Arroz Criollo**",
+    parrafo3: <p>Tiempo de preparación: <b>45 minutos</b> Número de porciones <b>4</b></p>,
+    subtitulo4: "Ingredientes",
+    ingrediente1: "Salsa de tomate",
+    ingrediente2: "2 cucharadas de aceite 14gr",
+    ingrediente3: "1 cebolla larga picada 45gr",
+    ingrediente4: "2 dientes de ajo finamente picado 3gr",
+    ingrediente5: "1 pimentón rojo picado en cuadritos 60gr",
+    ingrediente6: "1 taza de arroz blanco 225gr",
+    ingrediente7: "1 taza de maíz desgranado 79gr",
+    ingrediente8: "150gr de pechúga de pollo cocinado y desmechado",
+    ingrediente9: "Sal al gusto",
+    subtitulo5: "Preparación",
+    prep1: "Calentar en una olla el aceite, sofreir la cebolla junto con el ajo, el pimenton por 3 minutos.",
+    prep2: "Adicionar el arroz y continua sofriendo para que se dore.",
+    prep3: "Agregar el pollo, el maíz desgranado y las verduras.",
+    prep4: "Mezclar todo, rectificar sal y dejar cocinar hasta que seque.",
+    prep5: "Bajar el fuego, tapar la olla y continuar la cocción por 25 minutos más.",
+    parrafo4: "Esta rica receta fue proporcionada por María Paula.",
+};
+
+
+const element = (
+    <div>
+        {data.imagen}
+        {data.parrafo1}
+        <p>{data.parrafo2}</p>
+        <h2>{data.subtitulo1}</h2>
+        <h3>{data.subtitulo3}</h3>
+        {data.parrafo3}
+        <h3>{data.subtitulo4}</h3>
+        <ul><b>
+            <li>{data.ingrediente1}</li>
+            <li>{data.ingrediente2}</li>
+            <li>{data.ingrediente3}</li>
+            <li>{data.ingrediente4}</li>
+            <li>{data.ingrediente5}</li>
+            <li>{data.ingrediente6}</li>
+            <li>{data.ingrediente7}</li>
+            <li>{data.ingrediente8}</li>
+            <li>{data.ingrediente9}</li>
+        </b></ul>
+        <h3>{data.subtitulo5}</h3>
+        <ol>
+            <li>{data.prep1}</li>
+            <li>{data.prep2}</li>
+            <li>{data.prep3}</li>
+            <li>{data.prep4}</li>
+            <li>{data.prep5}</li>
+        </ol>
+        <p>{data.parrafo4}</p>
+    </div>
+);
+
+
+    ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+    </script>
+</body>
+</html>

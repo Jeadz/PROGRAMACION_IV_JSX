@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EJERCICIO 9</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+
+    
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const dataTabla1 = {
+    titulo: "Cartelera de vuelos - Aeropuerto el mirador",
+    subtitulo1: "Llegadas",
+    tabla_titulo1: "Aerolínea",
+    tabla_titulo2: "Nro. vuelo",
+    tabla_titulo3: "Estatus",
+    tabla_titulo4: "Hora estimada",
+    tabla_titulo5: "Puerta",
+    tabla1_celda1: "AIRLAN",
+    tabla1_celda2: "355",
+    tabla1_celda3: "ATERRIZADO",
+    tabla1_celda4: "2:45PM",
+    tabla1_celda5: "3",
+    tabla1_celda6: "VIAJAR",
+    tabla1_celda7: "556",
+    tabla1_celda8: "RETARDADO",
+    tabla1_celda9: "2:35PM",
+    tabla1_celda10: "6",
+    tabla1_celda11: "AEROVUELO",
+    tabla1_celda12: "1234",
+    tabla1_celda13: "EN VUELO",
+    tabla1_celda14: "3:45PM",
+    tabla1_celda15: "8",
+    tabla1_subtitulo2: "Salidas",
+};
+
+const dataTabla2 = {
+    tabla2_celda1: "AIRLAN",
+    tabla2_celda2: "355",
+    tabla2_celda3: "EMBARCANDO",
+    tabla2_celda4: "2:15PM",
+    tabla2_celda5: "1"
+    
+}
+
+
+const element = (
+    <div>
+        <h1>{dataTabla1.titulo}</h1>
+        <h2>{dataTabla1.subtitulo1}</h2>
+        <table border = "1px" cellspacing="0px" cellpadding = "7px">
+            <tr>
+                <th>{dataTabla1.tabla_titulo1}</th>
+                <th>{dataTabla1.tabla_titulo2}</th>
+                <th>{dataTabla1.tabla_titulo3}</th>
+                <th>{dataTabla1.tabla_titulo4}</th>
+                <th>{dataTabla1.tabla_titulo5}</th>
+            </tr>
+            <tr>
+                <td>{dataTabla1.tabla1_celda1}</td>
+                <td>{dataTabla1.tabla1_celda2}</td>
+                <td>{dataTabla1.tabla1_celda3}</td>
+                <td>{dataTabla1.tabla1_celda4}</td>
+                <td>{dataTabla1.tabla1_celda5}</td>
+            </tr>
+            <tr>
+                <td>{dataTabla1.tabla1_celda6}</td>
+                <td>{dataTabla1.tabla1_celda7}</td>
+                <td>{dataTabla1.tabla1_celda8}</td>
+                <td>{dataTabla1.tabla1_celda9}</td>
+                <td>{dataTabla1.tabla1_celda10}</td>
+            </tr>
+            <tr>
+                <td>{dataTabla1.tabla1_celda11}</td>
+                <td>{dataTabla1.tabla1_celda12}</td>
+                <td>{dataTabla1.tabla1_celda13}</td>
+                <td>{dataTabla1.tabla1_celda14}</td>
+                <td>{dataTabla1.tabla1_celda15}</td>
+            </tr>
+        </table>
+
+        <h2>{dataTabla1.tabla1_subtitulo2}</h2>
+        <table border = "1px" cellspacing="0px" cellpadding = "7px">
+            <tr>
+                <th>{dataTabla1.tabla_titulo1}</th>
+                <th>{dataTabla1.tabla_titulo2}</th>
+                <th>{dataTabla1.tabla_titulo3}</th>
+                <th>{dataTabla1.tabla_titulo4}</th>
+                <th>{dataTabla1.tabla_titulo5}</th>
+            </tr>
+            <tr>
+                <td>{dataTabla2.tabla2_celda1}</td>
+                <td>{dataTabla2.tabla2_celda2}</td>
+                <td>{dataTabla2.tabla2_celda3}</td>
+                <td>{dataTabla2.tabla2_celda4}</td>
+                <td>{dataTabla2.tabla2_celda5}</td>
+            </tr>
+        </table>
+    </div>
+);
+
+
+    ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+    </script>
+</body>
+</html>

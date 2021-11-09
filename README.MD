@@ -495,7 +495,6 @@ const element = (
 );
 ```
 ### Pinto los datos en la pantalla con ReactDOM.render();
-
 ```javascript
 ReactDOM.render(
     element,
@@ -505,3 +504,235 @@ ReactDOM.render(
 ### Salida Ejercicio 7
 ![Img text](img/ejercicio7-1.png)
 ![Img text](img/ejercicio7-2.png)
+
+
+# Ejercicio 8
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar  los datos del ejercicio
+```javascript
+const data = {
+    imagen: <h1><img src ="img/imagen2.png" width = "200px"></img>Tu Concierto</h1>,
+    parrafo1: "Bienvenidos a este blog de conciertos...",
+    imagen2: <img src = "img/imagen1.png" width = "900px"></img>,
+};
+```
+### Creación de la variable 'element' para pintar los datos con la estructura JSX y HTML
+```javascript
+const element = (
+    <div>
+        {data.imagen}
+        <p>{data.parrafo1}</p>
+        {data.imagen2}
+
+    </div>
+);
+```
+### Pinto los datos en la pantalla con ReactDOM.render();
+```javascript
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+```
+### Salida Ejercicio 8
+![Img text](img/ejercicio-8.png)
+
+# Ejercicio 9
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'dataTabla1' para guardar los datos de la tabla 1
+```javascript
+const dataTabla1 = {
+    titulo: "Cartelera de vuelos - Aeropuerto el mirador",
+    subtitulo1: "Llegadas",
+    tabla_titulo1: "Aerolínea",
+    tabla_titulo2: "Nro. vuelo",
+    tabla_titulo3: "Estatus",
+    tabla_titulo4: "Hora estimada",
+    tabla_titulo5: "Puerta",
+    tabla1_celda1: "AIRLAN",
+    tabla1_celda2: "355",
+    tabla1_celda3: "ATERRIZADO",
+    tabla1_celda4: "2:45PM",
+    tabla1_celda5: "3",
+    tabla1_celda6: "VIAJAR",
+    tabla1_celda7: "556",
+    tabla1_celda8: "RETARDADO",
+    tabla1_celda9: "2:35PM",
+    tabla1_celda10: "6",
+    tabla1_celda11: "AEROVUELO",
+    tabla1_celda12: "1234",
+    tabla1_celda13: "EN VUELO",
+    tabla1_celda14: "3:45PM",
+    tabla1_celda15: "8",
+    tabla1_subtitulo2: "Salidas",
+};
+```
+### Creación de la variable 'dataTabla2' para guardar los datos de la tabla 2
+```javascript
+const dataTabla2 = {
+    tabla2_celda1: "AIRLAN",
+    tabla2_celda2: "355",
+    tabla2_celda3: "EMBARCANDO",
+    tabla2_celda4: "2:15PM",
+    tabla2_celda5: "1"
+    
+}
+```
+### Creación de la variable 'element' para pintar los datos con la estructura JSX y HTML
+```javascript
+const element = (
+    <div>
+        <h1>{dataTabla1.titulo}</h1>
+        <h2>{dataTabla1.subtitulo1}</h2>
+        <table border = "1px" cellspacing="0px" cellpadding = "7px">
+            <tr>
+                <th>{dataTabla1.tabla_titulo1}</th>
+                <th>{dataTabla1.tabla_titulo2}</th>
+                <th>{dataTabla1.tabla_titulo3}</th>
+                <th>{dataTabla1.tabla_titulo4}</th>
+                <th>{dataTabla1.tabla_titulo5}</th>
+            </tr>
+            <tr>
+                <td>{dataTabla1.tabla1_celda1}</td>
+                <td>{dataTabla1.tabla1_celda2}</td>
+                <td>{dataTabla1.tabla1_celda3}</td>
+                <td>{dataTabla1.tabla1_celda4}</td>
+                <td>{dataTabla1.tabla1_celda5}</td>
+            </tr>
+            <tr>
+                <td>{dataTabla1.tabla1_celda6}</td>
+                <td>{dataTabla1.tabla1_celda7}</td>
+                <td>{dataTabla1.tabla1_celda8}</td>
+                <td>{dataTabla1.tabla1_celda9}</td>
+                <td>{dataTabla1.tabla1_celda10}</td>
+            </tr>
+            <tr>
+                <td>{dataTabla1.tabla1_celda11}</td>
+                <td>{dataTabla1.tabla1_celda12}</td>
+                <td>{dataTabla1.tabla1_celda13}</td>
+                <td>{dataTabla1.tabla1_celda14}</td>
+                <td>{dataTabla1.tabla1_celda15}</td>
+            </tr>
+        </table>
+
+        <h2>{dataTabla1.tabla1_subtitulo2}</h2>
+        <table border = "1px" cellspacing="0px" cellpadding = "7px">
+            <tr>
+                <th>{dataTabla1.tabla_titulo1}</th>
+                <th>{dataTabla1.tabla_titulo2}</th>
+                <th>{dataTabla1.tabla_titulo3}</th>
+                <th>{dataTabla1.tabla_titulo4}</th>
+                <th>{dataTabla1.tabla_titulo5}</th>
+            </tr>
+            <tr>
+                <td>{dataTabla2.tabla2_celda1}</td>
+                <td>{dataTabla2.tabla2_celda2}</td>
+                <td>{dataTabla2.tabla2_celda3}</td>
+                <td>{dataTabla2.tabla2_celda4}</td>
+                <td>{dataTabla2.tabla2_celda5}</td>
+            </tr>
+        </table>
+    </div>
+);
+```
+### Pinto los datos en la pantalla con ReactDOM.render();
+```javascript
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+```
+### Salida Ejercicio 9
+![Img text](img/ejercicio-9.png)
+
+# Ejercicio 10
+### Importo las librerías de React
+```javascript
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+### Creación de la variable 'data' para guardar  los datos del ejercicio
+```javascript
+const data = {
+    imagen: <h1><img src ="img/imagen3.png" width = "100px"></img>Recetas.com</h1>,
+    parrafo1: <p><a href="">Rrecetas Principales</a> | <a href="">Postres Latinos</a></p>,
+    parrafo2: "Bienvenido a nuestro sitio web sobre gastronomía Latina, te invitamos a preparar nuestras recetas",
+    subtitulo1: "Nuevas Recetas",
+    subtitulo3: "**Arroz Criollo**",
+    parrafo3: <p>Tiempo de preparación: <b>45 minutos</b> Número de porciones <b>4</b></p>,
+    subtitulo4: "Ingredientes",
+    ingrediente1: "Salsa de tomate",
+    ingrediente2: "2 cucharadas de aceite 14gr",
+    ingrediente3: "1 cebolla larga picada 45gr",
+    ingrediente4: "2 dientes de ajo finamente picado 3gr",
+    ingrediente5: "1 pimentón rojo picado en cuadritos 60gr",
+    ingrediente6: "1 taza de arroz blanco 225gr",
+    ingrediente7: "1 taza de maíz desgranado 79gr",
+    ingrediente8: "150gr de pechúga de pollo cocinado y desmechado",
+    ingrediente9: "Sal al gusto",
+    subtitulo5: "Preparación",
+    prep1: "Calentar en una olla el aceite, sofreir la cebolla junto con el ajo, el pimenton por 3 minutos.",
+    prep2: "Adicionar el arroz y continua sofriendo para que se dore.",
+    prep3: "Agregar el pollo, el maíz desgranado y las verduras.",
+    prep4: "Mezclar todo, rectificar sal y dejar cocinar hasta que seque.",
+    prep5: "Bajar el fuego, tapar la olla y continuar la cocción por 25 minutos más.",
+    parrafo4: "Esta rica receta fue proporcionada por María Paula.",
+};
+```
+### Creación de la variable 'element' para pintar los datos con la estructura JSX y HTML
+```javascript
+const element = (
+    <div>
+        {data.imagen}
+        {data.parrafo1}
+        <p>{data.parrafo2}</p>
+        <h2>{data.subtitulo1}</h2>
+        <h3>{data.subtitulo3}</h3>
+        {data.parrafo3}
+        <h3>{data.subtitulo4}</h3>
+        <ul><b>
+            <li>{data.ingrediente1}</li>
+            <li>{data.ingrediente2}</li>
+            <li>{data.ingrediente3}</li>
+            <li>{data.ingrediente4}</li>
+            <li>{data.ingrediente5}</li>
+            <li>{data.ingrediente6}</li>
+            <li>{data.ingrediente7}</li>
+            <li>{data.ingrediente8}</li>
+            <li>{data.ingrediente9}</li>
+        </b></ul>
+        <h3>{data.subtitulo5}</h3>
+        <ol>
+            <li>{data.prep1}</li>
+            <li>{data.prep2}</li>
+            <li>{data.prep3}</li>
+            <li>{data.prep4}</li>
+            <li>{data.prep5}</li>
+        </ol>
+        <p>{data.parrafo4}</p>
+    </div>
+);
+```
+### Pinto los datos en la pantalla con ReactDOM.render();
+```javascript
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+    );
+```
+### Salida Ejercicio 8
+![Img text](img/ejercicio10-1.png)
+![Img text](img/ejercicio10-2.png)
+
+
