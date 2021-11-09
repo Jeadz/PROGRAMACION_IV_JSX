@@ -797,7 +797,7 @@ ReactDOM.render(
     );
 ```
 ### Salida Ejercicio 11
-![Img text](img/ejercicio11.png)
+![Img text](img/ejercicio11.PNG)
 
 
 ### Ejercicio 12
@@ -835,7 +835,7 @@ ReactDOM.render(
     );
 ```
 ### Salida del ejercicio 12
-![Img text](img/ejercicio12.png)
+![Img text](img/ejercicio12.PNG)
 
 ### Ejercicio 13
 ### Importo las librerías de React
@@ -872,4 +872,4 @@ ReactDOM.render(
     );
 ```
 ### Salida del ejercicio 13
-![Img text](img/ejercicio13.png)
+![Img text](img/ejercicio13.PNG)
